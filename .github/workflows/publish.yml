@@ -25,5 +25,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > ~/.npmrc
-          npm whoami
+          echo "Verificando autenticación..."
+          npm whoami || echo "Error: No se pudo autenticar"
+          echo "Verificando permisos del paquete..."
+          npm access ls-packages 2>&1 | head -10 || echo "No se pudieron listar paquetes"
+          echo "Publicando..."
           npm publish --access public

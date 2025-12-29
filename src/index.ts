@@ -188,18 +188,30 @@ export { default as IconTextAlignLeft } from './icons/IconTextAlignLeft.vue'
 export { default as IconTextAlignRight } from './icons/IconTextAlignRight.vue'
 export { default as IconUnderline } from './icons/IconUnderline.vue'
 export { default as IconUndo } from './icons/IconUndo.vue'
+export { default as IconAgricultural } from './icons/IconAgricultural.vue'
 export { default as IconBulb } from './icons/IconBulb.vue'
+export { default as IconCamping } from './icons/IconCamping.vue'
 export { default as IconCoffeToGo } from './icons/IconCoffeToGo.vue'
 export { default as IconCoffee } from './icons/IconCoffee.vue'
 export { default as IconCookie } from './icons/IconCookie.vue'
+export { default as IconCultural } from './icons/IconCultural.vue'
 export { default as IconCupcake } from './icons/IconCupcake.vue'
+export { default as IconFire } from './icons/IconFire.vue'
 export { default as IconFirstAid } from './icons/IconFirstAid.vue'
 export { default as IconLeaf } from './icons/IconLeaf.vue'
 export { default as IconMoon } from './icons/IconMoon.vue'
+export { default as IconMountain } from './icons/IconMountain.vue'
 export { default as IconPlanet } from './icons/IconPlanet.vue'
 export { default as IconPuzzle } from './icons/IconPuzzle.vue'
 export { default as IconRainbow } from './icons/IconRainbow.vue'
+export { default as IconSea } from './icons/IconSea.vue'
+export { default as IconShovel } from './icons/IconShovel.vue'
+export { default as IconSnowflake } from './icons/IconSnowflake.vue'
 export { default as IconSun } from './icons/IconSun.vue'
+export { default as IconSunrise } from './icons/IconSunrise.vue'
+export { default as IconThermometer } from './icons/IconThermometer.vue'
+export { default as IconTree } from './icons/IconTree.vue'
+export { default as IconValley } from './icons/IconValley.vue'
 export { default as IconWaterDrop } from './icons/IconWaterDrop.vue'
 export { default as IconArchive } from './icons/IconArchive.vue'
 export { default as IconCloud } from './icons/IconCloud.vue'
@@ -255,8 +267,11 @@ export { default as IconCheckboxCheck } from './icons/IconCheckboxCheck.vue'
 export { default as IconCheckboxFill } from './icons/IconCheckboxFill.vue'
 export { default as IconCheckboxUnchecked } from './icons/IconCheckboxUnchecked.vue'
 export { default as IconCommand } from './icons/IconCommand.vue'
+export { default as IconConfetti } from './icons/IconConfetti.vue'
 export { default as IconCreditCard01 } from './icons/IconCreditCard01.vue'
 export { default as IconCreditCard02 } from './icons/IconCreditCard02.vue'
+export { default as IconCrown } from './icons/IconCrown.vue'
+export { default as IconDiamond } from './icons/IconDiamond.vue'
 export { default as IconDownload } from './icons/IconDownload.vue'
 export { default as IconDragHorizontal } from './icons/IconDragHorizontal.vue'
 export { default as IconDragVertical } from './icons/IconDragVertical.vue'
@@ -296,6 +311,7 @@ export { default as IconRadioUnchecked } from './icons/IconRadioUnchecked.vue'
 export { default as IconSearchMagnifyingGlass } from './icons/IconSearchMagnifyingGlass.vue'
 export { default as IconSettings } from './icons/IconSettings.vue'
 export { default as IconSettingsFuture } from './icons/IconSettingsFuture.vue'
+export { default as IconShare } from './icons/IconShare.vue'
 export { default as IconShoppingBag01 } from './icons/IconShoppingBag01.vue'
 export { default as IconShoppingBag02 } from './icons/IconShoppingBag02.vue'
 export { default as IconShoppingCart01 } from './icons/IconShoppingCart01.vue'
@@ -633,18 +649,30 @@ export function install(app: App) {
   app.component('IconTextAlignRight', require('./icons/IconTextAlignRight.vue').default)
   app.component('IconUnderline', require('./icons/IconUnderline.vue').default)
   app.component('IconUndo', require('./icons/IconUndo.vue').default)
+  app.component('IconAgricultural', require('./icons/IconAgricultural.vue').default)
   app.component('IconBulb', require('./icons/IconBulb.vue').default)
+  app.component('IconCamping', require('./icons/IconCamping.vue').default)
   app.component('IconCoffeToGo', require('./icons/IconCoffeToGo.vue').default)
   app.component('IconCoffee', require('./icons/IconCoffee.vue').default)
   app.component('IconCookie', require('./icons/IconCookie.vue').default)
+  app.component('IconCultural', require('./icons/IconCultural.vue').default)
   app.component('IconCupcake', require('./icons/IconCupcake.vue').default)
+  app.component('IconFire', require('./icons/IconFire.vue').default)
   app.component('IconFirstAid', require('./icons/IconFirstAid.vue').default)
   app.component('IconLeaf', require('./icons/IconLeaf.vue').default)
   app.component('IconMoon', require('./icons/IconMoon.vue').default)
+  app.component('IconMountain', require('./icons/IconMountain.vue').default)
   app.component('IconPlanet', require('./icons/IconPlanet.vue').default)
   app.component('IconPuzzle', require('./icons/IconPuzzle.vue').default)
   app.component('IconRainbow', require('./icons/IconRainbow.vue').default)
+  app.component('IconSea', require('./icons/IconSea.vue').default)
+  app.component('IconShovel', require('./icons/IconShovel.vue').default)
+  app.component('IconSnowflake', require('./icons/IconSnowflake.vue').default)
   app.component('IconSun', require('./icons/IconSun.vue').default)
+  app.component('IconSunrise', require('./icons/IconSunrise.vue').default)
+  app.component('IconThermometer', require('./icons/IconThermometer.vue').default)
+  app.component('IconTree', require('./icons/IconTree.vue').default)
+  app.component('IconValley', require('./icons/IconValley.vue').default)
   app.component('IconWaterDrop', require('./icons/IconWaterDrop.vue').default)
   app.component('IconArchive', require('./icons/IconArchive.vue').default)
   app.component('IconCloud', require('./icons/IconCloud.vue').default)
@@ -700,8 +728,11 @@ export function install(app: App) {
   app.component('IconCheckboxFill', require('./icons/IconCheckboxFill.vue').default)
   app.component('IconCheckboxUnchecked', require('./icons/IconCheckboxUnchecked.vue').default)
   app.component('IconCommand', require('./icons/IconCommand.vue').default)
+  app.component('IconConfetti', require('./icons/IconConfetti.vue').default)
   app.component('IconCreditCard01', require('./icons/IconCreditCard01.vue').default)
   app.component('IconCreditCard02', require('./icons/IconCreditCard02.vue').default)
+  app.component('IconCrown', require('./icons/IconCrown.vue').default)
+  app.component('IconDiamond', require('./icons/IconDiamond.vue').default)
   app.component('IconDownload', require('./icons/IconDownload.vue').default)
   app.component('IconDragHorizontal', require('./icons/IconDragHorizontal.vue').default)
   app.component('IconDragVertical', require('./icons/IconDragVertical.vue').default)
@@ -741,6 +772,7 @@ export function install(app: App) {
   app.component('IconSearchMagnifyingGlass', require('./icons/IconSearchMagnifyingGlass.vue').default)
   app.component('IconSettings', require('./icons/IconSettings.vue').default)
   app.component('IconSettingsFuture', require('./icons/IconSettingsFuture.vue').default)
+  app.component('IconShare', require('./icons/IconShare.vue').default)
   app.component('IconShoppingBag01', require('./icons/IconShoppingBag01.vue').default)
   app.component('IconShoppingBag02', require('./icons/IconShoppingBag02.vue').default)
   app.component('IconShoppingCart01', require('./icons/IconShoppingCart01.vue').default)

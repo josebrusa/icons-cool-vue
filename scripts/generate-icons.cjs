@@ -81,15 +81,18 @@ export default defineComponent({
 })
 
 // Generate index file with all exports
-const imports = generatedIcons.map(icon => `import ${icon.name} from './icons/${icon.name}.vue'`).join('\n')
-const exportsList = generatedIcons.map(icon => `export { default as ${icon.name} } from './icons/${icon.name}.vue'`).join('\n')
+const imports = generatedIcons.map(icon => `import ${icon.name}Component from './icons/${icon.name}.vue'`).join('\n')
+const markRawExports = generatedIcons.map(icon => `const ${icon.name} = markRaw(${icon.name}Component)`).join('\n')
+const exportsList = generatedIcons.map(icon => `export { ${icon.name} }`).join('\n')
 
 const indexContent = `// Auto-generated file - do not edit manually
 // Run 'npm run generate:icons' to regenerate
 
-import { App } from 'vue'
+import { App, markRaw } from 'vue'
 
 ${imports}
+
+${markRawExports}
 
 ${exportsList}
 

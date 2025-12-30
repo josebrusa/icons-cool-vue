@@ -36,5 +36,11 @@ jobs:
           npm access list packages 2>&1 | grep cool-vue-icons || echo "No se encontró el paquete en la lista de permisos"
           echo "=== Verificando versión en package.json ==="
           cat package.json | grep '"version"'
+          echo "=== Verificando si la versión ya existe ==="
+          VERSION=$(node -p "require('./package.json').version")
+          if npm view cool-vue-icons@$VERSION version 2>/dev/null; then
+            echo "⚠️  La versión $VERSION ya existe en npm. Saltando publicación."
+            exit 0
+          fi
           echo "=== Intentando publicar ==="
           npm publish --access public

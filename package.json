@@ -15,7 +15,10 @@
   },
   "files": [
     "dist",
-    "src"
+    "src",
+    "README.md",
+    "LICENSE.txt",
+    "ATTRIBUTION.md"
   ],
   "scripts": {
     "generate:icons": "node ./scripts/generate-icons.js",

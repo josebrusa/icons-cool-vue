@@ -31,15 +31,15 @@
     "vue3",
     "components"
   ],
-  "author": "Jose Brusa",
+  "author": "josebrusa <josebrusa@outlook.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JoseBrusa25/icons-cool-vue.git"
+    "url": "https://github.com/josebrusa/icons-cool-vue.git"
   },
-  "homepage": "https://github.com/JoseBrusa25/icons-cool-vue#readme",
+  "homepage": "https://github.com/josebrusa/icons-cool-vue#readme",
   "bugs": {
-    "url": "https://github.com/JoseBrusa25/icons-cool-vue/issues"
+    "url": "https://github.com/josebrusa/icons-cool-vue/issues"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

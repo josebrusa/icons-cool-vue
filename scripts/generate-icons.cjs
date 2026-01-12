@@ -53,6 +53,29 @@ svgFiles.forEach((filePath) => {
 
   // Remove outer <svg> wrapper; the IconBase controls size/viewBox
   svg = svg.replace(/<svg[^>]*>/i, '').replace(/<\/svg>/i, '')
+  
+  // Normalize colors: replace hardcoded fill and stroke colors with currentColor
+  // This ensures all icons respect the color prop from IconBase
+  // Replace fill with hex colors (with quotes)
+  svg = svg.replace(/fill="#[^"]*"/gi, 'fill="currentColor"')
+  // Replace stroke with hex colors (with quotes)
+  svg = svg.replace(/stroke="#[^"]*"/gi, 'stroke="currentColor"')
+  // Replace fill with rgb colors
+  svg = svg.replace(/fill="rgb\([^)]*\)"/gi, 'fill="currentColor"')
+  // Replace stroke with rgb colors
+  svg = svg.replace(/stroke="rgb\([^)]*\)"/gi, 'stroke="currentColor"')
+  // Replace fill with rgba colors
+  svg = svg.replace(/fill="rgba\([^)]*\)"/gi, 'fill="currentColor"')
+  // Replace stroke with rgba colors
+  svg = svg.replace(/stroke="rgba\([^)]*\)"/gi, 'stroke="currentColor"')
+  // Replace fill with hex colors (without quotes - edge cases)
+  svg = svg.replace(/fill=#[0-9A-Fa-f]{3,8}/gi, 'fill="currentColor"')
+  // Replace stroke with hex colors (without quotes - edge cases)
+  svg = svg.replace(/stroke=#[0-9A-Fa-f]{3,8}/gi, 'stroke="currentColor"')
+  // Replace fill with hex colors in attributes (more comprehensive pattern)
+  svg = svg.replace(/fill="#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})"/g, 'fill="currentColor"')
+  // Replace stroke with hex colors in attributes (more comprehensive pattern)
+  svg = svg.replace(/stroke="#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})"/g, 'stroke="currentColor"')
 
   const name = pascalCase(fileName)
   const componentName = `Icon${name}`
